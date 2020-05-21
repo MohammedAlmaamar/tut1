@@ -1,0 +1,34 @@
+﻿
+
+
+
+
+.myul {
+    background-color: #f1f1f1;
+   
+}
+
+ .myli {
+    
+    
+    
+     
+    
+}
+
+    .myli:hover {
+        background-color: #2CD5C4;
+        color: white;
+    }
+
+     .myli:last-child {
+     border-right: 1px solid #bbb;
+    
+    }
+
+    .myli::before {
+       
+        color: #1B365D; /* or whatever color you prefer */
+    }
+
+ 

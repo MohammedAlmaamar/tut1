@@ -1,0 +1,534 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81692D38-4367-4DAB-AC07-B0016B55FC43}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tut1</RootNamespace>
+    <AssemblyName>tut1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="contact_us.aspx" />
+    <Content Include="Accreditation_and_Licenses.html" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Release\Publish\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csc.exe" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csi.exe" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\vbc.exe" />
+    <Content Include="bin\Release\Publish\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\Release\Publish\bin\tut1.dll" />
+    <Content Include="bin\Release\Publish\bin\tut1.pdb" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap.css" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap.min.css" />
+    <Content Include="bin\Release\Publish\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="bin\Release\Publish\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="bin\Release\Publish\bootstrap\js\bootstrap.js" />
+    <Content Include="bin\Release\Publish\bootstrap\js\bootstrap.min.js" />
+    <Content Include="bin\Release\Publish\font\all.css" />
+    <Content Include="bin\Release\Publish\font\all.min.css" />
+    <Content Include="bin\Release\Publish\font\fontawesome.css" />
+    <Content Include="bin\Release\Publish\font\fontawesome.min.css" />
+    <Content Include="bin\Release\Publish\images\0.jpeg" />
+    <Content Include="bin\Release\Publish\images\1.jpg" />
+    <Content Include="bin\Release\Publish\images\123.PNG" />
+    <Content Include="bin\Release\Publish\images\123_1.PNG" />
+    <Content Include="bin\Release\Publish\images\2.jpg" />
+    <Content Include="bin\Release\Publish\images\22.jpg" />
+    <Content Include="bin\Release\Publish\images\22.png" />
+    <Content Include="bin\Release\Publish\images\3.jpg" />
+    <Content Include="bin\Release\Publish\images\321.PNG" />
+    <Content Include="bin\Release\Publish\images\4.jpg" />
+    <Content Include="bin\Release\Publish\images\5.jpg" />
+    <Content Include="bin\Release\Publish\images\a.PNG" />
+    <Content Include="bin\Release\Publish\images\b.PNG" />
+    <Content Include="bin\Release\Publish\images\bg-01.jpg" />
+    <Content Include="bin\Release\Publish\images\c.PNG" />
+    <Content Include="bin\Release\Publish\images\Capture.PNG" />
+    <Content Include="bin\Release\Publish\images\Capture1.PNG" />
+    <Content Include="bin\Release\Publish\images\footer.PNG" />
+    <Content Include="bin\Release\Publish\images\footer2.PNG" />
+    <Content Include="bin\Release\Publish\images\header.PNG" />
+    <Content Include="bin\Release\Publish\images\icons\favicon.ico" />
+    <Content Include="bin\Release\Publish\images\img-01.png" />
+    <Content Include="bin\Release\Publish\images\REGA Transparent.png" />
+    <Content Include="bin\Release\Publish\images\regaLogo.png" />
+    <Content Include="bin\Release\Publish\images\REGA_BM01_HOR_RGB.jpg" />
+    <Content Include="bin\Release\Publish\images\REGA_SYM_RGB.jpg" />
+    <Content Include="bin\Release\Publish\images\stracture.jpg" />
+    <Content Include="bin\Release\Publish\index4.html" />
+    <Content Include="bin\Release\Publish\StyleSheet1.css" />
+    <Content Include="bin\Release\Publish\webfonts\fa-brands-400.svg" />
+    <Content Include="bin\Release\Publish\webfonts\fa-regular-400.svg" />
+    <Content Include="bin\Release\Publish\webfonts\fa-solid-900.svg" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\tut1.dll" />
+    <Content Include="bin\tut1.pdb" />
+    <Content Include="bootstrap\css\about_us.css" />
+    <Content Include="bootstrap\css\bootstrap-grid.css" />
+    <Content Include="bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\DepartmentsContanet.css" />
+    <Content Include="bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\menuItem.js" />
+    <Content Include="bootstrap\js\owl.carousel.js" />
+    <Content Include="bootstrap\js\owl.carousel.min.js" />
+    <Content Include="Business_development-and_partnerships.html" />
+    <Content Include="bootstrap\js\cardJS.js" />
+    <Content Include="Communication.html" />
+    <Content Include="contact_us2.aspx" />
+    <Content Include="Data_and_Indicators.html" />
+    <Content Include="Excellence_Management.html" />
+    <Content Include="Facilities.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="Finance_Dept.html" />
+    <Content Include="font\all.css" />
+    <Content Include="font\all.min.css" />
+    <Content Include="font\fontawesome.css" />
+    <Content Include="font\fontawesome.min.css" />
+    <Content Include="GIS.html" />
+    <Content Include="Governor_Office.html" />
+    <Content Include="HR.html" />
+    <Content Include="images\0.jpeg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\123.PNG" />
+    <Content Include="images\123_1.PNG" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\22.jpg" />
+    <Content Include="images\22.png" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\321.PNG" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\a.PNG" />
+    <Content Include="images\b.PNG" />
+    <Content Include="images\bg-01.jpg" />
+    <Content Include="images\c.PNG" />
+    <Content Include="images\Capture.PNG" />
+    <Content Include="images\Capture1.PNG" />
+    <Content Include="images\DSC22_4003.png" />
+    <Content Include="images\footer.PNG" />
+    <Content Include="images\footer2.PNG" />
+    <Content Include="images\header.PNG" />
+    <Content Include="images\Ibrahim.jpg" />
+    <Content Include="images\icons\favicon.ico" />
+    <Content Include="images\img-01.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\news.PNG" />
+    <Content Include="images\p.jpg" />
+    <Content Include="images\REGA Transparent.png" />
+    <Content Include="images\regaLogo.png" />
+    <Content Include="images\REGA_BM01_HOR_RGB.jpg" />
+    <Content Include="images\REGA_SYM_RGB.jpg" />
+    <Content Include="images\spot.PNG" />
+    <Content Include="images\stracture.jpg" />
+    <Content Include="home.html" />
+    <Content Include="Internal_audit _and_risk.html" />
+    <Content Include="Investigation_and_ Dispute_Resolution.html" />
+    <Content Include="IT.html" />
+    <Content Include="Land_registration.html" />
+    <Content Include="Legal_Affairs.html" />
+    <Content Include="obj\Debug\tut1.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\tut1.dll" />
+    <Content Include="obj\Debug\tut1.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.AppContext.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\tut1.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\tut1.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap.css" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\js\bootstrap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\js\bootstrap.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\font\all.css" />
+    <Content Include="obj\Release\Package\PackageTmp\font\all.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\font\fontawesome.css" />
+    <Content Include="obj\Release\Package\PackageTmp\font\fontawesome.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\images\0.jpeg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\1.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\123.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\123_1.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\2.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\22.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\22.png" />
+    <Content Include="obj\Release\Package\PackageTmp\images\3.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\321.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\4.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\5.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\a.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\b.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\bg-01.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\c.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\Capture.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\Capture1.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\footer.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\footer2.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\header.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\images\icons\favicon.ico" />
+    <Content Include="obj\Release\Package\PackageTmp\images\img-01.png" />
+    <Content Include="obj\Release\Package\PackageTmp\images\REGA Transparent.png" />
+    <Content Include="obj\Release\Package\PackageTmp\images\regaLogo.png" />
+    <Content Include="obj\Release\Package\PackageTmp\images\REGA_BM01_HOR_RGB.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\REGA_SYM_RGB.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\images\stracture.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\index.html" />
+    <Content Include="obj\Release\Package\PackageTmp\index2.html" />
+    <Content Include="obj\Release\Package\PackageTmp\index3.html" />
+    <Content Include="obj\Release\Package\PackageTmp\index4.html" />
+    <Content Include="obj\Release\Package\PackageTmp\StyleSheet1.css" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-brands-400.svg" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-regular-400.svg" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-solid-900.svg" />
+    <Content Include="obj\Release\tut1.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\tut1.dll" />
+    <Content Include="obj\Release\tut1.pdb" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
+    <Content Include="Organizational_coordination.html" />
+    <Content Include="performance.html" />
+    <Content Include="PMO.html" />
+    <Content Include="Procurement.html" />
+    <Content Include="Research_and_studies.html" />
+    <Content Include="Stakeholders.html" />
+    <Content Include="Strategic_Planning.html" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="Systems_development.html" />
+    <Content Include="Untitled.png" />
+    <Content Include="Web.config" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contact_us2.aspx.cs">
+      <DependentUpon>contact_us2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_us2.aspx.designer.cs">
+      <DependentUpon>contact_us2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap\css\bootstrap.css.map" />
+    <Content Include="bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bootstrap\js\bootstrap.js.map" />
+    <Content Include="bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\tut1.csproj.CopyComplete" />
+    <Content Include="obj\Debug\tut1.csprojAssemblyReference.cache" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\js\bootstrap.js.map" />
+    <Content Include="obj\Release\Package\PackageTmp\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Web.config" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-brands-400.eot" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-brands-400.ttf" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-brands-400.woff" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-brands-400.woff2" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-regular-400.eot" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-regular-400.ttf" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-regular-400.woff" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-regular-400.woff2" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-solid-900.eot" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-solid-900.ttf" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-solid-900.woff" />
+    <Content Include="obj\Release\Package\PackageTmp\webfonts\fa-solid-900.woff2" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
+    <Content Include="obj\Release\tut1.csproj.CopyComplete" />
+    <Content Include="obj\Release\tut1.csprojAssemblyReference.cache" />
+    <Content Include="bin\Release\Publish.zip" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csc.exe.config" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csc.rsp" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csi.rsp" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\Release\Publish\bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\Release\Publish\bin\roslyn\vbc.rsp" />
+    <Content Include="bin\Release\Publish\bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap.css.map" />
+    <Content Include="bin\Release\Publish\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="bin\Release\Publish\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="bin\Release\Publish\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bin\Release\Publish\bootstrap\js\bootstrap.js.map" />
+    <Content Include="bin\Release\Publish\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="bin\Release\Publish\Web.config" />
+    <Content Include="bin\Release\Publish\webfonts\fa-brands-400.eot" />
+    <Content Include="bin\Release\Publish\webfonts\fa-brands-400.ttf" />
+    <Content Include="bin\Release\Publish\webfonts\fa-brands-400.woff" />
+    <Content Include="bin\Release\Publish\webfonts\fa-brands-400.woff2" />
+    <Content Include="bin\Release\Publish\webfonts\fa-regular-400.eot" />
+    <Content Include="bin\Release\Publish\webfonts\fa-regular-400.ttf" />
+    <Content Include="bin\Release\Publish\webfonts\fa-regular-400.woff" />
+    <Content Include="bin\Release\Publish\webfonts\fa-regular-400.woff2" />
+    <Content Include="bin\Release\Publish\webfonts\fa-solid-900.eot" />
+    <Content Include="bin\Release\Publish\webfonts\fa-solid-900.ttf" />
+    <Content Include="bin\Release\Publish\webfonts\fa-solid-900.woff" />
+    <Content Include="bin\Release\Publish\webfonts\fa-solid-900.woff2" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\tut1.dll.config" />
+    <Content Include="IT\process map\REGA - IT&amp;Security Process map_VF 17NOV19.pdf" />
+    <Content Include="IT\process map\REGA IT Policy_VF 17NOV19.docx" />
+    <Content Include="IT\process\REGA Procedures_1.0_Policies and Procedures Updating_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.10_Release and Development Management_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.11_Define Service Level Agreements_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.12_Manage Third Party Suppliers_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.13_Analyse and Report Performance_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.14_Capacity Management_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.15_Software Development Lifecycle_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.16_Backup Management_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.1_Strategy Management_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.2_Asset Management - Creation_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.3_Asset Management - Retrieval.Disposal_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.4_Configuration Management_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.5_Incident Management_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.6_Access Management_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.7_Problem Management_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.8_Service Request_v1.docx" />
+    <Content Include="IT\process\REGA Procedures_1.9_Change Management_v1.docx" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Accreditation_and_Licenses\" />
+    <Folder Include="Business_development-and_partnerships\" />
+    <Folder Include="Communication\" />
+    <Folder Include="Data_and_Indicators\" />
+    <Folder Include="Excellence_Management\" />
+    <Folder Include="Facilities\" />
+    <Folder Include="Finance_Dept\" />
+    <Folder Include="GIS\" />
+    <Folder Include="Governor_Office\" />
+    <Folder Include="HR\" />
+    <Folder Include="Internal_audit _and_risk\" />
+    <Folder Include="Investigation_and_ Dispute_Resolution\" />
+    <Folder Include="Land_registration\" />
+    <Folder Include="Legal_Affairs\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\" />
+    <Folder Include="obj\Release\TempPE\" />
+    <Folder Include="oprations\" />
+    <Folder Include="Organizational_coordination\" />
+    <Folder Include="performance\" />
+    <Folder Include="PMO\" />
+    <Folder Include="Procurement\" />
+    <Folder Include="Research_and_studies\" />
+    <Folder Include="Stakeholders\" />
+    <Folder Include="stakeHolder\" />
+    <Folder Include="Strategic_Planning\" />
+    <Folder Include="Systems_development\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60375</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44302/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
